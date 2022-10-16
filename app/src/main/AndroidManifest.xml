@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/myappicons"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/myappicons"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyQuiz"
+        tools:targetApi="31">
+        <activity android:name=".Activitys.Codingqc"/>
+        <activity android:name=".Activitys.Englishq"/>
+        <activity android:name=".Activitys.Gkquizc"/>
+        <activity android:name=".Activitys.Language"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".Activitys.Pictureq"/>
+        <activity android:name=".Activitys.Quiz"/>
+        <activity android:name=".Activitys.QuiznaboutA"/>
+        <activity android:name=".Activitys.ResultActivity"/>
+        <activity android:name=".Activitys.Setting"/>
+        <activity android:name=".Activitys.Signup"/>
+        <activity android:name=".Activitys.SpashScreen"/>
+        <activity android:name=".Activitys.Studyqc"/>
+        <activity
+            android:name=".Activitys.login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <service
+            android:name=".Models.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

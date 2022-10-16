@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Language">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/hindi"
+        android:layout_width="160dp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="@dimen/_10ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/ic_india"
+            app:civ_border_color="#FAF8F8"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:layout_width="154dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Hindi"
+            android:textAlignment="center"
+            android:textSize="@dimen/_17ssp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/marathi"
+        android:layout_width="160dp"
+        android:layout_height="@dimen/_100sdp"
+        app:cardCornerRadius="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView41"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/ic_india"
+            app:civ_border_color="#FAF8F8"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:layout_width="154dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Marathi"
+            android:textAlignment="center"
+            android:textSize="@dimen/_17ssp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/english"
+        android:layout_width="160dp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/hindi"
+        app:layout_constraintStart_toStartOf="@+id/hindi"
+        app:layout_constraintTop_toBottomOf="@+id/hindi">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/ic_india"
+            app:civ_border_color="#FAF8F8"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:layout_width="154dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="English"
+            android:textAlignment="center"
+            android:textSize="@dimen/_17ssp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

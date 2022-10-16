@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudcolor"
+    tools:context=".Activitys.QuiznaboutA">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/qabouttb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainh"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/headerbc"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/nimage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_185sdp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qabouttb"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/ntitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="@dimen/_15ssp"
+        android:paddingRight="@dimen/_15ssp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/quizabout"
+        android:text="Step in to The Light With"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nimage" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="2dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="#DAD6D6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ntitle" />
+
+    <TextView
+        android:id="@+id/ndescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/_15ssp"
+        android:paddingRight="@dimen/_15ssp"
+        android:text="Samad shahfdasfjasdlfsdjfsdfjadlfjsdljlsdfaslkdjafasd\n asdfjasdfasdfk sadfasdf asdf asdf asdf hljjkl   jljlj jjfasd sdfasdj kljljlk lkjljjkllkk kljljlj"
+        android:textColor="@color/quizaboutdesc"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

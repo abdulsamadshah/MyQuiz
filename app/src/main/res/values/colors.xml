@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //dark mode
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="someblue">#211350</color>
+    <color name="whitelight">#F5090909</color>
+    <color name="blue">#211350</color>
+    <color name="grayeswhite">#FBFAFA</color>
+    <color name="lightgray">#F6C586</color>
+    <color name="green">#B0D5B6</color>
+    <color name="somewhite">#111010</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bottomnc">@color/btcolor</color>
+    <color name="textcolor">@color/white</color>
+    <color name="backgroudcolor">#0F0E0E</color>
+    <color name="homeview2">#0E2431</color>
+    <color name="darkcolor">#1A1818</color>
+    <color name="quiza">#313030</color>
+    <color name="btcolor">#2C3639</color>
+    <color name="resultach">#2C3639</color>
+    <color name="resultach1">#0A1D37</color>
+    <color name="leaderbc">@color/quiza</color>
+    <color name="profileh">#2C3639</color>
+    <color name="profilebox">@color/white</color>
+    <color name="notificationbc">#0A1D37</color>
+    <color name="bottombc">@color/somewhite</color>
+    <color name="bottomitbc">@color/white</color>
+    <color name="headerbc">@color/white</color>
+    <color name="profilebc">#1A1818</color>
+    <color name="icarrowbc">@color/white</color>
+    <color name="codingh">@color/darkcolor</color>
+    <color name="mainh">@color/somewhite</color>
+    <color name="ptext">@color/white</color>
+    <color name="smookywhite">@color/somewhite</color>
+    <color name="quizabout">@color/white</color>
+    <color name="quizaboutdesc">@color/white</color>
+    <color name="notificationdark">@color/leaderbc</color>
+    <color name="notificationbaground">@color/somewhite</color>
+    <color name="spbc">#5D1581</color>
+
+</resources>

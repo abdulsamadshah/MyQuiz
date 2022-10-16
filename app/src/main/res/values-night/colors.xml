@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+//lightmode
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="whitelight">#F5090909</color>
+    <color name="grayeswhite">#FBFAFA</color>
+    <color name="lightgray">#F6C586</color>
+    <color name="green">#B0D5B6</color>
+    <color name="blue">#DFDFED</color>
+    <color name="somewhite">@color/someblue</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#070707</color>
+    <color name="bottomitbc">#070707</color>
+    <color name="bottomnc">@color/white</color>
+    <color name="textcolor">@color/black</color>
+    <color name="backgroudcolor">@color/white</color>
+    <color name="homeview2"> #E1E1E4</color>
+    <color name="darkcolor">@color/white</color>
+    <color name="quiza">#482473</color>
+    <color name="btcolor">#325A9E</color>
+    <color name="resultach">#482473</color>
+    <color name="resultach1">@color/white</color>
+    <color name="leaderbc">#F4F3F3</color>
+    <color name="profilebox">#27316A</color>
+    <color name="notificationbc">@color/white</color>
+    <color name="bottombc">@color/white</color>
+    <color name="headerbc">@color/white</color>
+    <color name="profilebc">#211350</color>
+    <color name="icarrowbc">@color/black</color>
+    <color name="codingh">@color/white</color>
+    <color name="mainh">@color/somewhite</color>
+    <color name="smookywhite">@color/white</color>
+    <color name="quizabout">#595555</color>
+    <color name="quizaboutdesc">#8F8C8C</color>
+    <color name="notificationdark">@color/smookywhite</color>
+    <color name="notificationbaground">@color/white</color>
+    <color name="spbc">#5D1581</color>
+
+
+
+</resources>

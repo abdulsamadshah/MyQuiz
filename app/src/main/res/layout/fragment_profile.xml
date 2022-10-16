@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_600sdp"
+    android:background="@color/darkcolor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Profile">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/maintb"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/somewhite"
+        android:minHeight="60dp"
+        app:title="@string/profile"
+        app:titleTextColor="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="404dp"
+        android:layout_height="656dp"
+        android:layout_marginTop="-40dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maintb">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="392dp"
+                android:layout_height="125dp"
+                android:background="@drawable/fhview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="-15dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/myuserimg"
+                android:layout_width="117dp"
+                android:layout_height="103dp"
+                android:layout_marginTop="64dp"
+                android:src="@drawable/avatar"
+                app:civ_border_color="#9E9C9D"
+                app:civ_border_width="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view2"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/usernames"
+                android:layout_width="259dp"
+                android:layout_height="39dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/username"
+                android:textAlignment="center"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/myuserimg" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="338dp"
+                android:layout_height="@dimen/_145sdp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/rounded_box"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.369"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/usernames" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif"
+                android:text="CurrentCoins"
+                android:textColor="@color/ptext"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/view6"
+                app:layout_constraintStart_toStartOf="@+id/view6"
+                app:layout_constraintTop_toTopOf="@+id/view6" />
+
+            <TextView
+                android:id="@+id/currentCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/mycoins"
+                android:textColor="@color/ptext"
+                android:textSize="46sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView9"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/requiredtowidhraw"
+                android:textColor="@color/ptext"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/currentCoins"
+                app:layout_constraintStart_toStartOf="@+id/currentCoins"
+                app:layout_constraintTop_toBottomOf="@+id/currentCoins" />
+
+            <EditText
+                android:id="@+id/emailBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/pview"
+                android:clickable="false"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:paddingLeft="150dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/view6"
+                app:layout_constraintStart_toStartOf="@+id/view6"
+                app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+
+            <EditText
+                android:id="@+id/phonepay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/pview"
+                android:clickable="false"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:paddingLeft="150dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/view6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view6"
+                app:layout_constraintTop_toBottomOf="@+id/emailBox" />
+
+            <TextView
+                android:id="@+id/sendRequest"
+                android:layout_width="342dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/buttondesign"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/sendRequest"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintEnd_toEndOf="@+id/emailBox"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/emailBox"
+                app:layout_constraintTop_toBottomOf="@+id/phonepay" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="95dp"
+                android:layout_height="43dp"
+                android:src="@drawable/gpay"
+                app:layout_constraintBottom_toBottomOf="@+id/emailBox"
+                app:layout_constraintStart_toStartOf="@+id/emailBox"
+                app:layout_constraintTop_toTopOf="@+id/emailBox" />
+
+            <EditText
+                android:id="@+id/gpay"
+                android:layout_width="265dp"
+                android:layout_height="38dp"
+                android:background="@null"
+                android:ems="10"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="@string/gpay"
+                android:inputType="number"
+                android:paddingTop="8dp"
+                android:textColor="#3C3A3A"
+                android:textColorHint="@color/textcolor"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/emailBox"
+                app:layout_constraintEnd_toEndOf="@+id/emailBox"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="@+id/emailBox"
+                app:layout_constraintVertical_bias="0.666" />
+
+
+            <ImageView
+                android:id="@+id/phonepayimg"
+                android:layout_width="95dp"
+                android:layout_height="43dp"
+                android:src="@drawable/phonepy"
+                app:layout_constraintBottom_toBottomOf="@+id/phonepay"
+                app:layout_constraintStart_toStartOf="@+id/phonepay"
+                app:layout_constraintTop_toTopOf="@+id/phonepay" />
+
+            <EditText
+                android:id="@+id/phonepayn"
+                android:layout_width="265dp"
+                android:layout_height="38dp"
+                android:background="@null"
+                android:ems="10"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="@string/phonepayn"
+                android:inputType="number"
+                android:paddingTop="8dp"
+                android:textColor="#3C3A3A"
+                android:textColorHint="@color/textcolor"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/phonepay"
+                app:layout_constraintEnd_toEndOf="@+id/phonepay"
+                app:layout_constraintStart_toEndOf="@+id/phonepayimg"
+                app:layout_constraintTop_toTopOf="@+id/phonepay" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
